@@ -1,0 +1,39 @@
+{
+  "name": "antweet-react",
+  "version": "1.0.0",
+  "description": "a react frontend for the original antweet",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --mode development --open --config ./webpack.config.js --progress --colors",
+    "build": "webpack --mode production --config ./webpack.config.js",
+    "test": "mocha --opts './tests/mocha.opts' './tests/**/*.test.js'"
+  },
+  "author": "Adam Leskis",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/register": "^7.0.0",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.0.4",
+    "chai": "^4.2.0",
+    "enzyme": "^3.7.0",
+    "enzyme-adapter-react-16": "^1.7.0",
+    "eslint": "^5.9.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-react": "^7.11.1",
+    "jsdom": "^13.0.0",
+    "mocha": "^5.2.0",
+    "prettier": "^1.15.3",
+    "prop-types": "^15.6.2",
+    "webpack": "^4.26.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.14"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
+}
